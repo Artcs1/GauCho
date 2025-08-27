@@ -292,21 +292,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-          As visual assistant systems powered by visual language models (VLMs) be-
-come more prevalent, concerns over user privacy have grown, particularly
-for blind and low vision users who may unknowingly capture personal
-private information in their images. Existing privacy protection methods
-rely on coarse-grained segmentation, which uniformly masks entire private
-objects, often at the cost of usability. In this work, we propose FiG-Priv, a
-fine-grained privacy protection framework that selectively masks only high-risk
-private information while preserving low-risk information. Our approach
-integrates fine-grained segmentation with a data-driven risk scoring mech-
-anism. By leveraging a more nuanced understanding of privacy risk, our
-method enables more effective protection without unnecessarily restricting
-users’ access to critical information. We evaluate our framework using the
-BIV-Priv-Seg dataset and show that FiG-Priv preserves +26% of image
-content, enhancing the ability of VLMs to provide useful responses by 11%
-and identify the image content by 45%, while ensuring privacy protection.
+          Oriented Object Detection (OOD) has received increased attention in the past years, being a suitable solution for detecting elongated objects in remote sensing analysis. In particular, using regression loss functions based on Gaussian distributions has become attractive since they yield simple and differentiable terms. However, existing solutions are still based on regression heads that produce Oriented Bounding Boxes (OBBs), and the known problem of angular boundary discontinuity persists. In this work, we propose a regression head for OOD that directly produces Gaussian distributions based on the Cholesky matrix decomposition. The proposed head, named GauCho, theoretically mitigates the boundary discontinuity problem and is fully compatible with recent Gaussian-based regression loss functions. Furthermore, we advocate using Oriented Ellipses (OEs) to represent oriented objects, which relates to GauCho through a bijective function and alleviates the encoding ambiguity problem for circular objects. Our experimental results show that GauCho can be a viable alternative to the traditional OBB head, achieving results comparable to or better than state-of-the-art detectors for the challenging dataset DOTA.
             
           </p>
         </div>
@@ -322,7 +308,7 @@ and identify the image content by 45%, while ensuring privacy protection.
             <h2 class="title is-3">Approach</h2>
             <div class="content has-text-justified">
             <p>
-            We propose the FiG-Priv framework, which combines fine-grained segmentation with a data-driven risk scoring mechanism.
+            GauCho detects oriented objects with typical representations or Oriented Ellipses. It relies on a novel regression head designed to directly predict the parameters of 2D Gaussian distributions through the Cholesky decomposition of their covariance matrices, which theoretically mitigates the boundary discontinuity problem.
             </p>
             </div>
             <div class="publication-image">
