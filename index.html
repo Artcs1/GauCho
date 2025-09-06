@@ -328,24 +328,14 @@
             <h2 class="title is-3">Results</h2>
             <div class="content has-text-justified">
             <p>
-            To evaluate VLM performance across the three masking strategies, we first test object recognition in two settings: when the private object is the focus of the question, and when a control object is the focus with the private object in the background.
+              
+            We adapted different OOD approaches to accommodate the GauCho head, namely: FCOS, RetinaNet, R$^3$Det, and RoI-Transformer. Result below used  ResNet-50 (R-50) backbone as default for all detectors. 
+              For all detectors, we generated results using different Gaussian-based loss functions: GWD, KLD and ProbIoU.
+            
             </p>
             </div>
             <div class="publication-image">
             <img src="./static/tables1.png" alt="Description of the image">
-            </div>
-        </div>
-    </div>
-    
-    <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-            <div class="content has-text-justified">
-            <p>
-            We also evaluate VLM performance on the VQA task using realistic, human-asked questions. Note that, high-risk masking achieves an answerability rate closest to that of the full image.
-            </p>
-            </div>
-            <div class="publication-image">
-            <img src="./static/answerable_plots.jpg" alt="Description of the image">
             </div>
         </div>
     </div>
